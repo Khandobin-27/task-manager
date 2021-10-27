@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced Todo List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="#" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <main class="flex">
+      <div class="flex-left">
+        <form id="new-todo-form">
+          <label for="todo-input"><span class="heading">Write a <span class="orange">task</span></span></label>
+          <input type="text" id="todo-input">
+          <button type="submit" class="btn">Add Task</button>
+        </form>
+      </div>
+      <div class="flex-right">
+        <ul id="list"></ul>
+      </div>
+    </main>
+  </div>
+
+  <template id="list-item-template">
+    <li class="list-item">
+        <input type="checkbox" data-list-item-checkbox class="checkbox">
+        <span data-list-item-text class="list-text"></span>
+        <div data-button-delete class="btn-delete">&#10005</div>
+    </li>
+  </template>
+</body>
+</html>
